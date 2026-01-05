@@ -89,15 +89,19 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="mt-1 flex-shrink-0 text-secondary" />
-                <span className="text-primary-foreground/80">Northern Nigeria</span>
+                <span className="text-primary-foreground/80">No 206, Maitama Mall, Abuja</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={20} className="mt-1 flex-shrink-0 text-secondary" />
-                <span className="text-primary-foreground/80">+234 XXX XXX XXXX</span>
+                <span className="text-primary-foreground/80">
+                +447793012771
+                +234 906 737 9828
+                +234 803 413 9428
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={20} className="mt-1 flex-shrink-0 text-secondary" />
-                <span className="text-primary-foreground/80">info@northernwomen.org</span>
+                <span className="text-primary-foreground/80">Northerwomen001@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -108,9 +112,9 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/20">
         <div className="container-section py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
-            <p>© 2024 Northern Women Initiative. All rights reserved.</p>
+            <p>© 2025 Northern Women Initiative. All rights reserved.</p>
             <p className="font-medium text-primary-foreground/80">Built to Empower. Designed for Impact.</p>
-            <p>Designed by <span className="text-secondary font-semibold">Seraczone Tech</span></p>
+            <p>Designed by <span className="text-secondary font-semibold">Seraczone Technology</span></p>
           </div>
         </div>
       </div>
