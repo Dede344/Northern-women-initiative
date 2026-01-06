@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import logo from "@/assets/logo.png";
+
+const TikTokIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 256 256"
+    fill="currentColor"
+    className="w-5 h-5"
+  >
+    <path d="M184,40.8a48.1,48.1,0,0,1-28.8-14.4,48.5,48.5,0,0,1-14.4-28.8H120V176a40,40,0,1,1-40-40,39.2,39.2,0,0,1,16,3.2V112a64,64,0,1,0,64,64V88a88.1,88.1,0,0,0,48,14.4V40.8Z" />
+  </svg>
+);
 
 const Footer = () => {
   return (
@@ -37,14 +48,14 @@ const Footer = () => {
               Empowering Northern women socially, emotionally, academically, and economically through community support and sustainable programs.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+              <a href="https://www.facebook.com/NorthernWomen" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+              <a href="https://www.instagram.com/Northernwomen__" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="mailto:info@northernwomen.org" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
-                <Mail size={20} />
+              <a href="https://www.tiktok.com/@NorthernWomen" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+                <TikTokIcon />
               </a>
             </div>
           </div>
@@ -53,7 +64,13 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {["About Us", "Programs", "Events", "Get Involved", "Contact"].map((item) => (
+              {[
+                "About Us",
+                "Programs",
+                "Events",
+                "Get Involved",
+                "Contact"
+              ].map((item) => (
                 <li key={item}>
                   <Link
                     to={`/${item.toLowerCase().replace(" ", "-")}`}
@@ -70,7 +87,12 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg font-semibold mb-6">Programs</h4>
             <ul className="space-y-3">
-              {["Women Empowerment", "Educational Support", "Community Outreach", "Northern Women Enterprise"].map((item) => (
+              {[
+                "Women Empowerment",
+                "Educational Support",
+                "Community Outreach",
+                "Northern Women Enterprise"
+              ].map((item) => (
                 <li key={item}>
                   <Link
                     to="/programs"
@@ -94,14 +116,10 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone size={20} className="mt-1 flex-shrink-0 text-secondary" />
                 <span className="text-primary-foreground/80">
-                +447793012771 <br />
-                +234 906 737 9828 <br />
-                +234 803 413 9428
+                  +447793012771 <br />
+                  +234 906 737 9828 <br />
+                  +234 803 413 9428
                 </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail size={20} className="mt-1 flex-shrink-0 text-secondary" />
-                <span className="text-primary-foreground/80">Northernwomen001@gmail.com</span>
               </li>
             </ul>
           </div>
