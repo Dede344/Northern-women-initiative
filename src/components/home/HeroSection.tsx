@@ -86,13 +86,23 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container-section relative z-10 py-20">
         <div className="max-w-3xl">
+          <motion.div
+            className="mb-6"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold font-serif text-gradient-gold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-yellow-600 to-orange-500 tracking-wide text-center drop-shadow-lg mb-2">
+              Northern Women Initiative For Empowerment, Growth and Development.
+            </h2>
+          </motion.div>
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground leading-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground leading-tight mb-6 text-center"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Empowering Northern Women.{" "}
+            Empowering Northern Women.{' '}
             <span className="text-gradient-gold">Strengthening Communities.</span>
           </motion.h1>
 

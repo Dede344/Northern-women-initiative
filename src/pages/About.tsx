@@ -111,8 +111,8 @@ const About = () => {
 
 					{/* Updated Section: Commitment */}
 					<div className="mt-16 bg-[#E8E0D5] py-12 px-6 rounded-lg">
-						<h3 className="text-3xl font-serif font-bold text-secondary mb-8 text-center">
-							We Are Committed To
+						<h3 className="text-xl font-serif font-m text-secondary mb-8 text-center">
+							We are committed to:
 						</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 							<div className="flex items-start space-x-4">

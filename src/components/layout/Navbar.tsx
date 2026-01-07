@@ -7,6 +7,7 @@ import logo from "@/assets/logo.png";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
+  { name: "Our Team", path: "/our-team" },
   { name: "Programs", path: "/programs" },
   { name: "Events", path: "/events" },
   { name: "Get Involved", path: "/get-involved" },

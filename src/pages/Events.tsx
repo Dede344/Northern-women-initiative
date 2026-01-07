@@ -170,36 +170,40 @@ const Events = () => {
         </div>
       </section>
 
-      {/* Upcoming Events */}
+      {/* Upcoming Events - 2026 Programs */}
       <section className="section-padding bg-muted">
         <div className="container-section">
           <div className="text-center mb-12">
             <span className="text-secondary font-medium text-sm uppercase tracking-wider">What's Coming</span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
-              Upcoming Events
+              Our 2026 Programs
             </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              At Northern Women Initiative For Empowerment, Growth and Development, 2026 is a year of giving, empowering, and creating opportunities for Northern women and girls. Our programs are designed to address critical needs, support growth, and build stronger communities.
+            </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {upcomingEvents.filter(e => !e.featured).map((event) => (
-              <div key={event.title} className="bg-card rounded-2xl p-8 border border-border card-hover">
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">{event.title}</h3>
-                <p className="text-muted-foreground mb-4">{event.description}</p>
-                <div className="space-y-2 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <Calendar size={16} className="text-primary" />
-                    <span>{event.date}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock size={16} className="text-primary" />
-                    <span>{event.time}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin size={16} className="text-primary" />
-                    <span>{event.location}</span>
-                  </div>
-                </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-card rounded-2xl p-6 border border-border shadow-lg transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer">
+                <h3 className="font-serif text-xl font-bold text-primary mb-2">Ramadan Feeding Initiative</h3>
+                <p className="text-muted-foreground text-lg">Providing nutritious meals to communities during Ramadan, spreading hope, care, and support to those in need.</p>
               </div>
-            ))}
+              <div className="bg-card rounded-2xl p-6 border border-border shadow-lg transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer">
+                <h3 className="font-serif text-xl font-bold text-primary mb-2">Supporting School Girls</h3>
+                <p className="text-muted-foreground text-lg">Supplying essential educational materials to girls, ensuring they have the tools they need to succeed academically and reach their full potential.</p>
+              </div>
+              <div className="bg-card rounded-2xl p-6 border border-border shadow-lg transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer">
+                <h3 className="font-serif text-xl font-bold text-primary mb-2">Empowering Small Business Women</h3>
+                <p className="text-muted-foreground text-lg">Offering financial support and resources to women entrepreneurs, helping them grow their businesses and achieve independence.</p>
+              </div>
+              <div className="bg-card rounded-2xl p-6 border border-border shadow-lg transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer">
+                <h3 className="font-serif text-xl font-bold text-primary mb-2">Mentorship & Business Support</h3>
+                <p className="text-muted-foreground text-lg">Guiding women through mentorship, advising them on business growth, and supporting them in advertising and promoting their ventures to reach wider markets.</p>
+              </div>
+            </div>
+            <p className="mt-8 text-muted-foreground text-lg text-center">
+              Through these programs, we are committed to uplifting Northern women and girls, fostering growth, and creating lasting, positive impact in their lives, families, and communities.
+            </p>
           </div>
         </div>
       </section>
@@ -227,6 +231,74 @@ const Events = () => {
           </div>
         </div>
       </section>
+
+      {/* Meet and Greet 2025 Gallery */}
+      <section className="section-padding bg-background">
+        <div className="container-section">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">Meet and Greet 2025</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {[...Array(10)].map((_, i) => (
+              <div key={i} className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group cursor-pointer">
+                <img
+                  src={`/assets/past-events/meet-greet-2025-${i+1}.jpg`}
+                  alt={`Meet and Greet 2025 - ${i+1}`}
+                  className="w-full h-48 object-cover mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:brightness-90 group-hover:blur-[1px]"
+                  onError={(e) => (e.currentTarget.src = 'https://via.placeholder.com/300x192')}
+                />
+                <span className="text-primary text-base font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">Meet and Greet 2025</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Northern Women Summit 2025 Gallery */}
+      <section className="section-padding bg-background">
+        <div className="container-section">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">Northern Women Summit 2025</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {[...Array(10)].map((_, i) => (
+              <div key={i} className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl group cursor-pointer">
+                <img
+                  src={`/assets/past-events/summit-2025-${i+1}.jpg`}
+                  alt={`Northern Women Summit 2025 - ${i+1}`}
+                  className="w-full h-48 object-cover mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:brightness-90 group-hover:blur-[1px]"
+                  onError={(e) => (e.currentTarget.src = 'https://via.placeholder.com/300x192')}
+                />
+                <span className="text-primary text-base font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">Northern Women Summit 2025</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Past Events
+      <section className="section-padding bg-background">
+        <div className="container-section">
+          <div className="text-center mb-12">
+            <span className="text-secondary font-medium text-sm uppercase tracking-wider">Our Journey</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
+              Past Events
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              A glimpse into the impactful events we've hosted, bringing together hundreds of Northern women.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {pastEvents.map((event) => (
+              <div key={event.title} className="bg-muted rounded-2xl p-6 text-center card-hover">
+                <div className="text-4xl font-serif font-bold text-primary mb-2">{event.attendees}+</div>
+                <div className="text-sm text-muted-foreground">Attendees</div>
+                <h3 className="font-serif font-semibold text-foreground mt-4">{event.title}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
 
       {/* CTA */}
       <section className="section-padding bg-primary">
