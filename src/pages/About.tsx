@@ -213,62 +213,41 @@ const About = () => {
 							{/* <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-6">
                 About The Founder
               </h2> */}
+			  <br />
+			  <br />
 							<div className="space-y-4 text-muted-foreground">
 								<p>
-									My name is Mrs Maryam Mohammed Nasir, and I am the founder of Northern Women
+									My name is Mrs Maryam Mohammed Nasir, founder of Northern Women
 									Initiative For Empowerment, Growth and Development.
 								</p>
 								<p>
 									For the past 14 years, I have lived in the United Kingdom, building my life in
-									Scotland as a mother, a professional, and a businesswoman. But no matter the
-									distance, my heart has always remained at home — with my people, my roots, and
-									the women of Northern Nigeria. Their strength, resilience, and silent sacrifices
-									have never left me.
+									Scotland as a mother, professional, and businesswoman. Yet my heart has always 
+									remained with Northern Nigeria — with its women, their resilience, strenght, and
+									silent sacrifices. 
 								</p>
 								<p>
-									In January 2025, that love for community became action. I started this initiative
-									with one clear intention: to build something meaningful and strong for Northern
-									women — a space where they are seen, heard, supported, and celebrated. In just
-									one year, this vision has grown into a movement that is touching lives and
-									creating real impact.
+									In January 2025, I turned that love into action by founding Northern Women Initiative:
+									a movement created to ensure Northern women are seen, supported, and celebrated.  
+									Within one year, the initiative has grown into a platform creating real and 
+									measurable impact.
 								</p>
 								<p>
-									Our very first event was Northern WOMEN Meet & Greet, held in June, a beautiful
-									gathering that brought together women from all walks of life — entrepreneurs,
-									leaders, politicians, successful businesswomen, and women rich in knowledge and
-									experience. Although I was unable to attend in person, my dedicated team managed
-									every detail with excellence, proving that this initiative is built on strong
-									leadership, trust, and shared vision.
+									Our journey began with the Northern Women Meet & Greet in June, followed by our 							gathering that brought together women from all walks of life — entrepreneurs,
+									first major summit, Northern Women's Summer 2025, held on 1st November in Nigeria.
+					                I travelled from the UK to attend personally, as this work is deeply personal to	
+									me. Over 500 women participated, making it a historic and powerful moment of unity,  
+						            learning, and hope. By the will of Allah, this summit will be held annually.
 								</p>
 								<p>
-									Later in the year, on 1st November, we hosted our first one-day summit in Nigeria,
-									Northern Women’s Summer 2025 — a powerful gathering focused on inspiration,
-									learning, and connection. I travelled from the UK to be present, because this work
-									is deeply personal to me. Over 500 women participated in this summit, making it a
-									truly historic and impactful moment for our community. The summit was more than an
-									event; it was a moment of unity, growth, and hope. This summit is a foundation we
-									intend to build on and will be held yearly, by the will of Allah.
+									Today, we support over 300 registered women in Nigeria, particularly small business
+									owners and aspiring entrepreneurs, and have proudly launched Northern Women Magazine
+									2025, celebrating the voices and excellence of Northern women.
 								</p>
 								<p>
-									Today, we proudly support over 300 registered women members in Nigeria,
-									particularly small business owners and aspiring entrepreneurs. We have also
-									launched our first publication, Northern Women Magazine 2025, a celebration of
-									Northern women — their stories, their excellence, and their voices.
-								</p>
-								<p>
-									Although our registered membership is currently in Nigeria, we are intentionally
-									working towards expanding and registering in Scotland and across the UK, with the
-									vision of connecting Northern women at home and in the diaspora — building
-									bridges, sharing opportunities, and growing together.
-								</p>
-								<p>
-									This journey is deeply inspired by my late father, who taught me that success is
-									not measured by money, but by the lives you touch and the impact you leave
-									behind. His words live in this work.
-								</p>
-								<p>
-									Northern Women Initiative is not just an organisation to me. It is my calling. It
-									is service. It is love in action.
+									Inspired by my late father, who taught me that true success is measured by
+									not by income, this initiative is more than an organization, It is my
+									calling, my service, and my purpose.
 								</p>
 								<p>And this is only the beginning.</p>
 							</div>
