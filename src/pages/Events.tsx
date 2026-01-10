@@ -1196,292 +1196,6 @@
 
 // export default Events;
 
-// import Layout from "@/components/layout/Layout";
-// import { Button } from "@/components/ui/button";
-// import { Link } from "react-router-dom";
-// import { ArrowRight, Calendar, MapPin, Users, Clock } from "lucide-react";
-// import { motion, Variants } from "framer-motion";
-
-// // Featured
-// import summitImage from "@/assets/summit-event.jpg";
-
-// // 2026 Programs
-// import ramadan from "@/assets/ramadan.jpg";
-// import schoolgirl from "@/assets/schoolgirl.jpg";
-// import womenbusiness from "@/assets/womenbusiness.jpg";
-// import businesssupport from "@/assets/businesssupport.jpg";
-
-// // Gallery Images (ns1 – ns14)
-// import ns1 from "@/assets/ns1.jpg";
-// import ns2 from "@/assets/ns2.jpg";
-// import ns3 from "@/assets/ns3.jpg";
-// import ns4 from "@/assets/ns4.jpg";
-// import ns5 from "@/assets/ns5.jpg";
-// import ns6 from "@/assets/ns6.jpg";
-// import ns7 from "@/assets/ns7.jpg";
-// import ns8 from "@/assets/ns8.jpg";
-// import ns9 from "@/assets/ns9.jpg";
-// import ns10 from "@/assets/ns10.jpg";
-// import ns11 from "@/assets/ns11.jpg";
-// import ns12 from "@/assets/ns12.jpg";
-// import ns13 from "@/assets/ns13.jpg";
-// import ns14 from "@/assets/ns14.jpg";
-
-// /* ================= DATA ================= */
-
-// const programs = [
-//   {
-//     id: "ramadan",
-//     title: "Ramadan Feeding Initiative",
-//     description:
-//       "Providing nutritious meals to communities during Ramadan, spreading hope, care, and support to those in need.",
-//     image: ramadan,
-//   },
-//   {
-//     id: "schoolgirls",
-//     title: "Supporting School Girls",
-//     description:
-//       "Supplying essential educational materials to girls, ensuring they have the tools they need to succeed academically.",
-//     image: schoolgirl,
-//   },
-//   {
-//     id: "womenbusiness",
-//     title: "Empowering Small Business Women",
-//     description:
-//       "Offering financial support and resources to women entrepreneurs, helping them grow sustainable businesses.",
-//     image: womenbusiness,
-//   },
-//   {
-//     id: "mentorship",
-//     title: "Mentorship & Business Support",
-//     description:
-//       "Guiding women through mentorship, business advisory, advertising, and market access.",
-//     image: businesssupport,
-//   },
-// ];
-
-// const summitImages = [
-//   ns1, ns2, ns3, ns4, ns5, ns6, ns7,
-//   ns8, ns9, ns10, ns11, ns12, ns13, ns14,
-// ];
-
-// /* ================= ANIMATIONS ================= */
-
-// const container: Variants = {
-//   hidden: {},
-//   visible: {
-//     transition: { staggerChildren: 0.18 },
-//   },
-// };
-
-// const slideLeft: Variants = {
-//   hidden: { opacity: 0, x: -60 },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     transition: { duration: 0.6, ease: "easeOut" },
-//   },
-// };
-
-// const slideRight: Variants = {
-//   hidden: { opacity: 0, x: 60 },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     transition: { duration: 0.6, ease: "easeOut" },
-//   },
-// };
-
-// /* 🔥 FIXED: slideUp was missing before */
-// const slideUp: Variants = {
-//   hidden: { opacity: 0, y: 40 },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: { duration: 0.5, ease: "easeOut" },
-//   },
-// };
-
-// /* ================= PAGE ================= */
-
-// export default function Events() {
-//   return (
-//     <Layout>
-
-//       {/* HERO */}
-//       <section className="bg-gradient-hero py-20">
-//         <div className="container-section text-left">
-//           <span className="text-secondary uppercase text-sm font-medium">
-//             Events
-//           </span>
-//           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary-foreground mt-3 mb-6">
-//             Our Events & Programs
-//           </h1>
-//           <p className="text-lg text-primary-foreground/90">
-//             Empowering Northern women through impactful gatherings and initiatives.
-//           </p>
-//         </div>
-//       </section>
-
-//       {/* FEATURED EVENT */}
-//       <section className="section-padding bg-background">
-//         <div className="container-section grid lg:grid-cols-2 gap-12 items-center">
-//           <img
-//             src={summitImage}
-//             alt="Northern Women Summit 2026"
-//             className="rounded-2xl h-[380px] w-full object-cover"
-//             loading="lazy"
-//           />
-//           <div>
-//             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-//               Northern Women Summit 2026
-//             </h2>
-
-//             <div className="space-y-3 text-muted-foreground mb-6">
-//               <div className="flex gap-3"><Calendar size={18} /> Nov 1, 2026</div>
-//               <div className="flex gap-3"><Clock size={18} /> 9AM – 5PM</div>
-//               <div className="flex gap-3"><MapPin size={18} /> Northern Nigeria</div>
-//               <div className="flex gap-3"><Users size={18} /> 500+ Attendees</div>
-//             </div>
-
-//             <Button variant="gold" size="xl" asChild>
-//               <Link to="/get-involved">
-//                 Register Now <ArrowRight size={18} />
-//               </Link>
-//             </Button>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* 2026 PROGRAMS */}
-//       <section className="section-padding bg-muted">
-//         <div className="container-section">
-//           <h2 className="text-center text-4xl font-serif font-bold text-gold mb-14">
-//             Our 2026 Programs
-//           </h2>
-
-//           <motion.div
-//             variants={container}
-//             initial="hidden"
-//             whileInView="visible"
-//             viewport={{ once: true }}
-//             className="space-y-24"
-//           >
-//             {programs.map((p, i) => (
-//               <section
-//                 key={p.id}
-//                 id={p.id}
-//                 className="grid lg:grid-cols-2 gap-10 items-center"
-//               >
-//                 <motion.div
-//                   variants={i % 2 === 0 ? slideLeft : slideRight}
-//                   className={i % 2 !== 0 ? "lg:order-2" : ""}
-//                 >
-//                   <h3 className="text-3xl font-serif font-bold mb-4">
-//                     {p.title}
-//                   </h3>
-//                   <p className="text-lg text-muted-foreground mb-6">
-//                     {p.description}
-//                   </p>
-//                   <Button variant="burgundy">Donate</Button>
-//                 </motion.div>
-
-//                 <motion.div
-//                   variants={i % 2 === 0 ? slideRight : slideLeft}
-//                   className={i % 2 !== 0 ? "lg:order-1" : ""}
-//                 >
-//                   <img
-//                     src={p.image}
-//                     alt={p.title}
-//                     className="rounded-2xl h-[300px] w-full object-cover"
-//                     loading="lazy"
-//                   />
-//                 </motion.div>
-//               </section>
-//             ))}
-//           </motion.div>
-//         </div>
-//       </section>
-
-//       {/* PREVIOUS EVENTS + GALLERY */}
-//       <section className="section-padding bg-background">
-//         <div className="container-section">
-//           <h2 className="text-center text-4xl font-serif font-bold mb-12">
-//             Our Previous Events
-//           </h2>
-
-//           <h3 className="text-3xl font-serif font-bold text-burgundy mb-8 text-center">
-//             Northern Women Summit 2025
-//           </h3>
-
-//           <motion.div
-//             variants={container}
-//             initial="hidden"
-//             whileInView="visible"
-//             viewport={{ once: true }}
-//             className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"
-//           >
-//             {summitImages.map((img, i) => (
-//               <motion.div
-//                 key={i}
-//                 variants={slideUp}
-//                 className="group relative overflow-hidden rounded-2xl"
-//               >
-//                 <img
-//                   src={img}
-//                   alt="Summit Gallery"
-//                   className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-//                   loading="lazy"
-//                 />
-//                 <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-burgundy transition-all duration-500 group-hover:w-full" />
-//               </motion.div>
-//             ))}
-//           </motion.div>
-//         </div>
-//       </section>
-
-//       {/* VIDEO HIGHLIGHT */}
-//       <section className="section-padding bg-muted">
-//         <div className="container-section text-center">
-//           <h2 className="text-4xl font-serif font-bold text-burgundy mb-10">
-//             Event Video Highlight
-//           </h2>
-
-//           <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
-//             <iframe
-//               className="w-full h-[240px] sm:h-[360px] md:h-[480px]"
-//               src="https://www.youtube.com/embed/VIDEO_ID"
-//               title="Event Highlights"
-//               allowFullScreen
-//             />
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* PARTNERS */}
-//       <section className="section-padding bg-background">
-//         <div className="container-section text-center">
-//           <h2 className="text-4xl font-serif font-bold mb-12">
-//             Our Partners
-//           </h2>
-
-//           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
-//             {[1, 2, 3, 4, 5].map((i) => (
-//               <div
-//                 key={i}
-//                 className="h-20 bg-muted rounded-xl flex items-center justify-center text-muted-foreground font-medium"
-//               >
-//                 Partner Logo
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//     </Layout>
-//   );
-// }
-
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -1497,7 +1211,7 @@ import schoolgirl from "@/assets/schoolgirl.jpg";
 import womenbusiness from "@/assets/womenbusiness.jpg";
 import businesssupport from "@/assets/businesssupport.jpg";
 
-// Gallery Images
+// Gallery Images (ns1 – ns14)
 import ns1 from "@/assets/ns1.jpg";
 import ns2 from "@/assets/ns2.jpg";
 import ns3 from "@/assets/ns3.jpg";
@@ -1578,6 +1292,7 @@ const slideRight: Variants = {
   },
 };
 
+/* 🔥 FIXED: slideUp was missing before */
 const slideUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -1593,24 +1308,22 @@ export default function Events() {
   return (
     <Layout>
 
-      {/* HERO — LEFT ALIGNED */}
-      <section className="bg-gradient-hero py-24">
+      {/* HERO */}
+      <section className="bg-gradient-hero py-20">
         <div className="container-section text-left">
           <span className="text-secondary uppercase text-sm font-medium">
             Events
           </span>
-
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary-foreground mt-3 mb-6">
             Our Events & Programs
           </h1>
-
-          <p className="text-lg text-primary-foreground/90 max-w-2xl">
+          <p className="text-lg text-primary-foreground/90">
             Empowering Northern women through impactful gatherings and initiatives.
           </p>
         </div>
       </section>
 
-      {/* MEET & GREET / FEATURED EVENT */}
+      {/* FEATURED EVENT */}
       <section className="section-padding bg-background">
         <div className="container-section grid lg:grid-cols-2 gap-12 items-center">
           <img
@@ -1619,7 +1332,6 @@ export default function Events() {
             className="rounded-2xl h-[380px] w-full object-cover"
             loading="lazy"
           />
-
           <div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
               Northern Women Summit 2026
