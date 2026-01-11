@@ -117,8 +117,8 @@ const Footer = () => {
                 <Phone size={20} className="mt-1 flex-shrink-0 text-secondary" />
                 <span className="text-primary-foreground/80">
                   +447793012771 <br />
-                  +234 906 737 9828 <br />
-                  +234 803 413 9428
+                  +2349067379828 <br />
+                  +2348034139428
                 </span>
               </li>
             </ul>

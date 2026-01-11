@@ -388,6 +388,76 @@ const About = () => {
         </div>
       </section>
 
+      {/* Founder's Message */}
+      <section className="section-padding bg-muted">
+        <div className="container-section">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <span className="text-secondary font-m text-3xl uppercase tracking-wider">
+                About The Founder
+              </span>
+              <br />
+              <br />
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  My name is Mrs Maryam Mohammed Nasir, founder of Northern Women
+                  Initiative For Empowerment, Growth and Development.
+                </p>
+                <p>
+                  For the past 14 years, I have lived in the United Kingdom, building my life in
+                  Scotland as a mother, professional, and businesswoman. Yet my heart has always 
+                  remained with Northern Nigeria — with its women, their resilience, strenght, and
+                  silent sacrifices. 
+                </p>
+                <p>
+                  In January 2025, I turned that love into action by founding Northern Women Initiative:
+                  a movement created to ensure Northern women are seen, supported, and celebrated.  
+                  Within one year, the initiative has grown into a platform creating real and 
+                  measurable impact.
+                </p>
+                <p>
+                  Our journey began with the Northern Women Meet & Greet in June, followed by our 
+                  gathering that brought together women from all walks of life — entrepreneurs,
+                  first major summit, Northern Women's Summer 2025, held on 1st November in Nigeria.
+                  I travelled from the UK to attend personally, as this work is deeply personal to	
+                  me. Over 500 women participated, making it a historic and powerful moment of unity,  
+                  learning, and hope. By the will of Allah, this summit will be held annually.
+                </p>
+                <p>
+                  Today, we support over 300 registered women in Nigeria, particularly small business
+                  owners and aspiring entrepreneurs, and have proudly launched Northern Women Magazine
+                  2025, celebrating the voices and excellence of Northern women.
+                </p>
+                <p>
+                  Inspired by my late father, who taught me that true success is measured by
+                  not by income, this initiative is more than an organization, It is my
+                  calling, my service, and my purpose.
+                </p>
+                <p>And this is only the beginning.</p>
+              </div>
+              <div className="mt-6">
+                <p className="font-serif text-xl font-semibold text-foreground">
+                  Hajiya Maryam Mohammed Nasir
+                </p>
+                <p className="text-muted-foreground">
+                  Founder, Northern Women Initiative For Empowerment, Growth and Development
+                </p>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="relative">
+                <img
+                  src={founderImage}
+                  alt="Mariam - Founder"
+                  className="w-full max-w-md mx-auto rounded-2xl shadow-elevated"
+                />
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary/20 rounded-2xl -z-10" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Story */}
       <section className="section-padding bg-background">
         <div className="container-section">
@@ -537,76 +607,6 @@ const About = () => {
                 </div>
               ))}
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Founder's Message */}
-      <section className="section-padding bg-muted">
-        <div className="container-section">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <span className="text-secondary font-m text-3xl uppercase tracking-wider">
-                About The Founder
-              </span>
-              <br />
-              <br />
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  My name is Mrs Maryam Mohammed Nasir, founder of Northern Women
-                  Initiative For Empowerment, Growth and Development.
-                </p>
-                <p>
-                  For the past 14 years, I have lived in the United Kingdom, building my life in
-                  Scotland as a mother, professional, and businesswoman. Yet my heart has always 
-                  remained with Northern Nigeria — with its women, their resilience, strenght, and
-                  silent sacrifices. 
-                </p>
-                <p>
-                  In January 2025, I turned that love into action by founding Northern Women Initiative:
-                  a movement created to ensure Northern women are seen, supported, and celebrated.  
-                  Within one year, the initiative has grown into a platform creating real and 
-                  measurable impact.
-                </p>
-                <p>
-                  Our journey began with the Northern Women Meet & Greet in June, followed by our 
-                  gathering that brought together women from all walks of life — entrepreneurs,
-                  first major summit, Northern Women's Summer 2025, held on 1st November in Nigeria.
-                  I travelled from the UK to attend personally, as this work is deeply personal to	
-                  me. Over 500 women participated, making it a historic and powerful moment of unity,  
-                  learning, and hope. By the will of Allah, this summit will be held annually.
-                </p>
-                <p>
-                  Today, we support over 300 registered women in Nigeria, particularly small business
-                  owners and aspiring entrepreneurs, and have proudly launched Northern Women Magazine
-                  2025, celebrating the voices and excellence of Northern women.
-                </p>
-                <p>
-                  Inspired by my late father, who taught me that true success is measured by
-                  not by income, this initiative is more than an organization, It is my
-                  calling, my service, and my purpose.
-                </p>
-                <p>And this is only the beginning.</p>
-              </div>
-              <div className="mt-6">
-                <p className="font-serif text-xl font-semibold text-foreground">
-                  Hajiya Maryam Mohammed Nasir
-                </p>
-                <p className="text-muted-foreground">
-                  Founder, Northern Women Initiative For Empowerment, Growth and Development
-                </p>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <div className="relative">
-                <img
-                  src={founderImage}
-                  alt="Mariam - Founder"
-                  className="w-full max-w-md mx-auto rounded-2xl shadow-elevated"
-                />
-                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary/20 rounded-2xl -z-10" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
